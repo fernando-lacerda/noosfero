@@ -1,4 +1,4 @@
-binary_packages='deb http://download.noosfero.org/debian/stretch-test ./'
+binary_packages='deb https://download.noosfero.org/debian/stretch-test ./'
 
 source_packages=$(echo "$binary_packages" | sed -e 's/^deb/deb-src/')
 
@@ -8,7 +8,7 @@ $binary_packages
 $source_packages
 EOF
 
-sudo apt-get -fy install gnupg
+sudo apt-get -fy install gnupg apt-transport-https
 
   sudo apt-key add - <<EOF
 -----BEGIN PGP PUBLIC KEY BLOCK-----
