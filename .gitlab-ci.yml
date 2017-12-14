@@ -1,4 +1,4 @@
-image: noosfero/ci
+image: noosfero/ci-stretch
 
 before_script:
   - mkdir -p locale # makes quick-start skip compiling translations
