@@ -27,7 +27,7 @@ class ThemeManagerHelperPluginTest < ActiveSupport::TestCase
     assert_equal result[:file_type], 'text/plain'
     pack.stubs(:read).returns 'PKJteste/PK'
     result = get_theme_package @temp, pack
-    assert_equal result[:file_type], 'application/zip'
+    assert_equal result[:file_type], 'application/octet-stream'
   end
 
   should "exists zipfile reference" do
