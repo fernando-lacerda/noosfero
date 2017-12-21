@@ -20,7 +20,7 @@ stages:
 
 .tags-template: &tags
   tags:
-    - jessie
+    - stretch
 
 specs-models:
   <<: *retriable
